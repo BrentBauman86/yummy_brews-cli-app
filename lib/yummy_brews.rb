@@ -1,5 +1,6 @@
-require "yummy_brews/version"
+require_relative "./yummy_brews/version"
+require_relative "./yummy_brews/cli"
 
-module YummyBrews
-  # Your code goes here...
-end
+require 'open-uri'
+require 'pry'
+require 'nokogiri'

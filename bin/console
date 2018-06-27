@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+# !/usr/bin/env ruby
 
 require "bundler/setup"
 require "yummy_brews"
@@ -7,7 +7,7 @@ require "yummy_brews"
 # with your gem easier. You can also use a different console, if you like.
 
 # (If you use this, don't forget to add pry to your Gemfile!)
-require "pry"
+# require "pry"
 # Pry.start
 
 require "irb"
