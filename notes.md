@@ -17,3 +17,9 @@ Building my Cli Gemfile
   4. Pilsner
   5. Ale
   6. Stout
+
+- Beer details people want to know about
+ 1. Beers ABV
+ 2. Beers brewery
+ 3. Beers price
+ 4. Beers description

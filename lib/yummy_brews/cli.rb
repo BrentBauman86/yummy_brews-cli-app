@@ -5,8 +5,8 @@ class YummyBrews::CLI
     list_brews
 # binding.pry
     start
-    brew_scraper
-    # binding.pry
+    fairwell
+    # brew_scraper
   end
 
   def list_brews
@@ -17,6 +17,7 @@ class YummyBrews::CLI
           4. Hefeweizen
           5. Pilsner
           6. Ale"
+    @brews = YummyBrews::Brews
   end
 
   def brew_scraper
@@ -25,6 +26,7 @@ class YummyBrews::CLI
   end
 
   def start
+    input = nil
     puts "Enter the brew number which fits your fancy:"
     input = gets.strip
     if input == "1"
@@ -36,4 +38,7 @@ class YummyBrews::CLI
     end
 end
 
+  def fairwell
+    puts "Hope that made you thirsty!"
+  end
 end
