@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require "./lib/yummy_brews"
+require_relative "../lib/yummy_brews"
 
 YummyBrews::CLI.new.call
