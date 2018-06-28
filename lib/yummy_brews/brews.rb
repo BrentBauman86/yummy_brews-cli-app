@@ -37,12 +37,19 @@ class YummyBrews::Brews
   end
 
   def self.brew_scraper
-    # brews = []
-
     # brews << self.brews
     doc = Nokogiri::HTML(open("https://untappd.com"))
+    brews = []
+    doc.css().each do |info|
+      name = info.css().text
+      abv = info.css().text
+      brewery = info.css().text
+      brews << {:name => name, :abv => abv, :brewery => brewery}
     binding.pry
     # this needs to return our array of brews!!
+  end
+end
+brewery
   end
 
 end

@@ -5,7 +5,6 @@ class YummyBrews::CLI
     list_brews
 # binding.pry
     start
-    # fairwell
     # brew_scraper
   end
 
@@ -46,11 +45,8 @@ class YummyBrews::CLI
     elsif input == "6"
       puts "ale"
     else
-      puts "Goodbye!"
+      puts "Goodbye, hope that made you thirsty!"
     end
 end
 
-  def fairwell
-    puts "Hope that made you thirsty!"
-  end
 end
