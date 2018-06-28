@@ -1,4 +1,4 @@
-# !/usr/bin/env ruby
+#!/usr/bin/env ruby
 
 require "bundler/setup"
 require "yummy_brews"
@@ -11,4 +11,5 @@ require "yummy_brews"
 # Pry.start
 
 require "irb"
-IRB.start(__FILE__)
+IRB.start
+# IRB.start(__FILE__) this was here upon initialization, not sure why.

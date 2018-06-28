@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
 require_relative "../lib/yummy_brews"
+require "bundler/setup"
+require "yummy_brews"
 
 YummyBrews::CLI.new.call

@@ -1,6 +1,6 @@
 class YummyBrews::Brews
 
-attr_accessor :name :brewery :price_range :abv
+  attr_accessor :name, :brewery, :price_range, :abv
 
   def self.brews
     wheat_beers = self.new
@@ -38,6 +38,8 @@ attr_accessor :name :brewery :price_range :abv
     ale_beers.brewery = "Blue Moon Brewing Company"
     ale_beers.price_range = "medium"
     ale_beers.abv = "5.4%"
+
+    [wheat_beers, ipa_beers, stout_beers, hefeweizen_beers, pilsner_beers, ale_beers]
   end
 
 
@@ -51,7 +53,7 @@ attr_accessor :name :brewery :price_range :abv
 
 
   def brew_scraper
-    doc = Nokogiri::HTML(open(https://untappd.com/search?q=all&type=beer&sort=all))
+    # doc = Nokogiri::HTML(open(https://untappd.com))
     # binding.pry
   end
 

@@ -29,8 +29,11 @@ class YummyBrews::CLI
     input = nil
     puts "Enter the brew number which fits your fancy:"
     input = gets.strip
-    if input == "1"
-      puts "Displays info and picture of selected brew"
+
+    if input.to_i > 0
+      puts @brews[input.to_i-1]
+    elsif input == "list_brews"
+      list_brews
     elsif input == "2"
       puts "Displays info and picture of selected brew"
     else
