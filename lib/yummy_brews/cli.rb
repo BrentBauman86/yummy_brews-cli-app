@@ -18,6 +18,9 @@ class YummyBrews::CLI
           5. Pilsner
           6. Ale"
     @brews = YummyBrews::Brews
+    # @brews.each.with_index(1) do |brews, i|
+      # puts "#{i}". "#{brews.name}"
+    # end
   end
 
   def brew_scraper

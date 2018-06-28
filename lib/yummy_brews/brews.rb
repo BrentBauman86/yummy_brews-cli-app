@@ -42,16 +42,6 @@ class YummyBrews::Brews
     [wheat_beers, ipa_beers, stout_beers, hefeweizen_beers, pilsner_beers, ale_beers]
   end
 
-
-
-
-
-
-
-
-
-
-
   def brew_scraper
     # doc = Nokogiri::HTML(open(https://untappd.com))
     # binding.pry

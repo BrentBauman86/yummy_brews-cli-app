@@ -23,3 +23,8 @@ Building my Cli Gemfile
  2. Beers brewery
  3. Beers price
  4. Beers description
+
+- Scrape info
+ 1. Scrape untappd website for the above mentioned detials.
+ 2. Not sure if I want to scrape the initial "all" beers page or search within each beers respected page for more info...
+ 3.
