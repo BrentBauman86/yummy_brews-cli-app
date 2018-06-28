@@ -38,13 +38,9 @@ class YummyBrews::Brews
 
   def self.brew_scraper
     # brews = []
-<<<<<<< HEAD
-    doc = Nokogiri::HTML(open(https://untappd.com))
-=======
 
     # brews << self.brews
     doc = Nokogiri::HTML(open("https://untappd.com"))
->>>>>>> 7240032a565026b37a036ef47db00b7a7dd87450
     binding.pry
     # this needs to return our array of brews!!
   end

@@ -5,7 +5,7 @@ class YummyBrews::CLI
     list_brews
 # binding.pry
     start
-    fairwell
+    # fairwell
     # brew_scraper
   end
 
@@ -33,14 +33,20 @@ class YummyBrews::CLI
     puts "Enter the brew number which fits your fancy:"
     input = gets.strip
 
-    if input.to_i > 0
-      puts @brews[input.to_i-1]
-    elsif input == "list_brews"
-      list_brews
+    if input == "1"
+      puts "Yummy Wheat beers here"
     elsif input == "2"
-      puts "Displays info and picture of selected brew"
+      puts "ipas"
+    elsif input == "3"
+      puts "stout"
+    elsif input == "4"
+      puts "hefe"
+    elsif input == "5"
+      puts "pilsner"
+    elsif input == "6"
+      puts "ale"
     else
-      puts "Come back now ya hear!"
+      puts "Goodbye!"
     end
 end
 
