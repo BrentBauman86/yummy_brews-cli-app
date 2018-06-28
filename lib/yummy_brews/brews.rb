@@ -33,12 +33,18 @@ class YummyBrews::Brews
     ale_beers.brewery = "Blue Moon Brewing Company"
     ale_beers.abv = "5.4%"
 
-    [wheat_beers, ipa_beers, stout_beers, hefeweizen_beers, pilsner_beers, ale_beers]
+    # [wheat_beers, ipa_beers, stout_beers, hefeweizen_beers, pilsner_beers, ale_beers]
   end
 
-  def brew_scraper
+  def self.brew_scraper
     # brews = []
+<<<<<<< HEAD
     doc = Nokogiri::HTML(open(https://untappd.com))
+=======
+
+    # brews << self.brews
+    doc = Nokogiri::HTML(open("https://untappd.com"))
+>>>>>>> 7240032a565026b37a036ef47db00b7a7dd87450
     binding.pry
     # this needs to return our array of brews!!
   end
