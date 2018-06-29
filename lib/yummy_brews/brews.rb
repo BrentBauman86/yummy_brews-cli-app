@@ -45,11 +45,11 @@ class YummyBrews::Brews
       abv = info.css().text
       brewery = info.css().text
       brews << {:name => name, :abv => abv, :brewery => brewery}
-    binding.pry
+    # binding.pry
     # this needs to return our array of brews!!
   end
 end
-brewery
+brews
   end
 
-end
+# end

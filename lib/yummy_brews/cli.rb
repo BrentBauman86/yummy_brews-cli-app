@@ -3,7 +3,6 @@ class YummyBrews::CLI
   def call
     puts "Hello fellow brew lover, what kind of brew would you like to check out?  Here are your options:"
     list_brews
-# binding.pry
     start
     # brew_scraper
   end
@@ -29,6 +28,7 @@ class YummyBrews::CLI
 
   def start
     input = nil
+    puts ""
     puts "Enter the brew number which fits your fancy:"
     input = gets.strip
 
