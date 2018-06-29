@@ -1,4 +1,4 @@
-class YummyBrews::Brews
+class BrewScraper
 
   attr_accessor :name, :brewery, :abv
 
@@ -37,19 +37,19 @@ class YummyBrews::Brews
   end
 
   def self.brew_scraper
-    # brews << self.brews
     doc = Nokogiri::HTML(open("https://untappd.com"))
     brews = []
-    doc.css().each do |info|
-      name = info.css().text
-      abv = info.css().text
-      brewery = info.css().text
+    beer = doc.css("div.result-list beer-list").each do |list|
+      beer.css("div.beer-details").each do |details|
+      name = details.css().text
+      abv = details.css().text
+      brewery = details.css().text
       brews << {:name => name, :abv => abv, :brewery => brewery}
     # binding.pry
     # this needs to return our array of brews!!
+    end
   end
+  brews
 end
-brews
-  end
 
 # end
