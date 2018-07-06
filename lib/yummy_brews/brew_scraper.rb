@@ -37,21 +37,16 @@ class BrewScraper
   # end
 
   def self.brew_scraper
-    doc = Nokogiri::HTML(open("https://untappd.com"))
-    # binding.pry
-    # brews = []
-    # doc.css("div.result-list.beer-list").each do |list|
-    #   list.css("div.content").each do |content|
-    #   name = content.css("div.name").text
-    #   abv = content.css("p.abv").text
-    #   brewery = content.css("p.brewery").text
-      # brews << {:name => name, :brewery => brewery, :abv => abv}
-    # this needs to return our array of brews!!
-        # end
-        # profile_url = "#{link.attr("href")}"
-      # end
+    doc = Nokogiri::HTML(open("https://untappd.com/search?q=beer"))
+    brews = []
+    doc.css("div.result-list.beer-list").each do |list|
+      list.css("div.beer-item").each do |content|
+      name = content.css("p.name").text
+      abv = content.css("p.abv").text
+      brewery = content.css("p.brewery").text
+      brews << {:name => name, :brewery => brewery, :abv => abv}
+        end
+      end
     end
-  # brews
+  brews
 end
-
-# end
