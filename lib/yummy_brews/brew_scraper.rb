@@ -2,7 +2,7 @@ class BrewScraper
 
   attr_accessor :name, :brewery, :abv
 
-  # def self.brews
+
   #   wheat_beers = self.new
   #   wheat_beers.name = "Blue Moon"
   #   wheat_beers.brewery = "Blue Moon Brewing Company"
