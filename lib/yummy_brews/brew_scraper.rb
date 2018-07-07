@@ -1,7 +1,10 @@
 class BrewScraper
 
   def self.initiate_scraper
-
+    Brew.create_from_array(brew_scraper)
+    Brew.all.each do |brew|
+      brew.brew_details(brew_scraper_details(brew.brew_url))
+    end 
   end
 
   def self.brew_scraper
@@ -16,9 +19,9 @@ class BrewScraper
       abv = abv.strip
       brew_type = content.css("p.style").text
       brewery = content.css("p.brewery").text
-      rating = content.search("p.rating span.num").text
+      rating = content.css("p.rating span.num").text
       rating = rating[1..5]
-      brews << {:name => name, :brewery => brewery, :abv => abv, :url => base_url :brew_type => brew_type, :rating => rating}
+      brews << {:name => name, :brewery => brewery, :abv => abv, :url => base_url, :brew_type => brew_type, :rating => rating}
         end
       end
     brews
