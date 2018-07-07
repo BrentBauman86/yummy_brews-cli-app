@@ -14,7 +14,15 @@ class YummyBrews::CLI
   end
 
   def display_brew(integer)
-
+    user_selection = Brew.all[integer - 1]
+    puts ""
+    puts user_selection.name
+    puts user_selection.brewery 
+    puts user_selection.brew_type
+    puts user_selection.abv
+    puts user_selection.rating 
+    puts user_selection.brew_url 
+    puts user_selection.description
   end
 
   def start
