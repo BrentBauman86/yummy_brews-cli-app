@@ -1,4 +1,4 @@
-class YummyBrews::CLI
+class CLI
 
   def call
     BrewScraper.initiate_scraper
@@ -33,12 +33,13 @@ class YummyBrews::CLI
 
     if input.to_i > 0 && input.to_i < Brew.all.length
       display_brew(input.to_i)
+      start
 
     elsif input == "exit"
       puts "Goodbye, hope that made you thirsty!"
 
     else
-      list_brews
+      start 
     end
   end
 end

@@ -10,7 +10,7 @@ class Brew
     @abv = brew_hash[:abv]
     @brew_type = brew_hash[:brew_type]
     @rating = brew_hash[:rating]
-    @brew_url = brew_hash[:brew_url]
+    @brew_url = brew_hash[:url]
     @@all << self
   end
 
