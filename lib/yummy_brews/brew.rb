@@ -14,6 +14,10 @@ class Brew
     @@all << self
   end
 
+  def self.create_from_array(array)
+    array.each {|brew_hash| Brew.new(brew_hash)}
+  end
+
   def brew_details(details_hash)
     @description = details_hash[:description]
   end
@@ -21,5 +25,4 @@ class Brew
   def self.all
     @@all
   end
-
 end
