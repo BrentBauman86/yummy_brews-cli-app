@@ -1,5 +1,9 @@
 class BrewScraper
 
+  def self.initiate_scraper
+
+  end
+
   def self.brew_scraper
     doc = Nokogiri::HTML(open("https://untappd.com/search?q=beers", :allow_redirection => :all))
     base_url = "https://www.untappd.com"
@@ -20,10 +24,14 @@ class BrewScraper
     brews
   end
 
-  def self.brew_scraper_details
-    doc = Nokogiri::HTML(open("https://untappd.com"))
+  def self.brew_scraper_details(brew_url)
 
-    details = doc.css("div.beer-description-read-less")
+    doc = Nokogiri::HTML(open(base_url, :allow_redirection => :all)
 
+    content = doc.css("div.content")
+    description = content.css("div.bottom div.desc div.beer-description-read-less").text
+    brew_details = {:description => description}
+
+    brew_details
   end
 end
