@@ -1,30 +1,16 @@
 class YummyBrews::CLI
 
   def call
+    BrewScraper.initiate_scraper
     puts "Hello fellow brew lover, what kind of brew would you like to check out?  Here are your options:"
     list_brews
     start
-    # brew_scraper
   end
 
   def list_brews
-    puts "
-          1. Wheat
-          2. IPA
-          3. Stout
-          4. Hefeweizen
-          5. Pilsner
-          6. Ale"
-    @brews = YummyBrews::Brews
-    # @brews.each.with_index(1) do |brews, i|
-      # puts "#{i}". "#{brews.name}"
-    # end
+    Brew.all.each.with_index(1) do |brews, index|
+      puts "#{index}". "#{brews}"
   end
-
-  # def brew_scraper
-  #   # doc = Nokogiri::HTML(open(https://untappd.com/search?q=all&type=beer&sort=all))
-  #   # binding.pry
-  # end
 
   def start
     input = nil
