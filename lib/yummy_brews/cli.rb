@@ -20,9 +20,9 @@ class CLI
     puts user_selection.brewery
     puts user_selection.brew_type
     puts user_selection.abv
-    puts user_selection.rating
+    puts "Rating: #{user_selection.rating}/5"
+    puts "\n\t#{user_selection.description}"
     puts user_selection.brew_url
-    puts user_selection.description
   end
 
   def start
@@ -39,7 +39,7 @@ class CLI
       puts "Goodbye, hope that made you thirsty!"
 
     else
-      start 
+      start
     end
   end
 end

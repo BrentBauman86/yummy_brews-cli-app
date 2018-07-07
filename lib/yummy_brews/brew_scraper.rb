@@ -31,7 +31,8 @@ class BrewScraper
     doc = Nokogiri::HTML(open(brew_url, :allow_redirections => :all))
 
     content = doc.css("div.content")
-    description = content.css("div.bottom div.desc div.beer-description-read-less").text
+    description = content.css("div.bottom div.desc div.beer-descrption-read-less").text
+
     brew_details = {:description => description}
 
     brew_details
