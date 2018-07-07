@@ -4,11 +4,11 @@ class BrewScraper
     Brew.create_from_array(brew_scraper)
     Brew.all.each do |brew|
       brew.brew_details(brew_scraper_details(brew.brew_url))
-    end 
+    end
   end
 
   def self.brew_scraper
-    doc = Nokogiri::HTML(open("https://untappd.com/search?q=beers", :allow_redirection => :all))
+    doc = Nokogiri::HTML(open("https://untappd.com/search?q=beers", :allow_redirections => :all))
     base_url = "https://www.untappd.com"
     brews = []
     doc.css("div.result-list.beer-list").each do |list|
@@ -28,8 +28,7 @@ class BrewScraper
   end
 
   def self.brew_scraper_details(brew_url)
-
-    doc = Nokogiri::HTML(open(base_url, :allow_redirection => :all)
+    doc = Nokogiri::HTML(open(brew_url, :allow_redirections => :all)
 
     content = doc.css("div.content")
     description = content.css("div.bottom div.desc div.beer-description-read-less").text

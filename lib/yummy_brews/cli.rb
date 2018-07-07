@@ -9,7 +9,7 @@ class YummyBrews::CLI
 
   def list_brews
     Brew.all.each.with_index(1) do |brew, index|
-      puts "#{index}". "#{brew.name}"
+      puts "#{index}. #{brew.name}"
     end
   end
 
@@ -41,3 +41,4 @@ class YummyBrews::CLI
       list_brews
     end
   end
+end
