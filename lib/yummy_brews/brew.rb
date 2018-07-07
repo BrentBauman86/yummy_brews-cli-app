@@ -1,6 +1,6 @@
 class Brew
 
-  attr_accessor :name, :brewery, :abv, :brew_type, :rating, :brew_url
+  attr_accessor :name, :brewery, :abv, :brew_type, :rating, :brew_url, :description
 
   @@all = []
 
@@ -14,8 +14,12 @@ class Brew
     @@all << self
   end
 
-def brew_details(details_hash)
-  @details = details_hash[:details]
-end
+  def brew_details(details_hash)
+    @description = details_hash[:description]
+  end
+
+  def self.all
+    @@all
+  end
 
 end
