@@ -17,11 +17,11 @@ class YummyBrews::CLI
     user_selection = Brew.all[integer - 1]
     puts ""
     puts user_selection.name
-    puts user_selection.brewery 
+    puts user_selection.brewery
     puts user_selection.brew_type
     puts user_selection.abv
-    puts user_selection.rating 
-    puts user_selection.brew_url 
+    puts user_selection.rating
+    puts user_selection.brew_url
     puts user_selection.description
   end
 
@@ -32,11 +32,12 @@ class YummyBrews::CLI
     input = gets.strip
 
     if input.to_i > 0 && input.to_i < Brew.all.length
-
+      display_brew(input.to_i)
 
     elsif input == "exit"
       puts "Goodbye, hope that made you thirsty!"
-    end
-end
 
-end
+    else
+      list_brews
+    end
+  end
