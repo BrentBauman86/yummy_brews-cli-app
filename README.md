@@ -4,19 +4,13 @@ Welcome to the YummyBrews-cli-app!  This app will allow you to explore a variety
 
 Installation
 
-Add this line to your application's Gemfile:
+In order to add this gem, simply type the following:
 
-```ruby
-gem 'yummy_brews'
-```
+type in the command line: gem 'yummy_brews'
 
-And then execute:
+and then execute:  bundle
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install yummy_brews
+or install it yourself as:  gem install yummy_brews
 
 ## Usage
 
