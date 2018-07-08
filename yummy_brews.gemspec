@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["'brentbauman86@gmail.com'"]
 
   spec.summary       = %q{Find some of the tastiest beers around using this beautiful CLI}
-  spec.description   = %q{Scraped using the untappd website: https://untappd.com/search?q=all&type=beer&sort=all}
+  spec.description   = %q{Scraped using the untappd website: https://untappd.com/search?q=beers}
   spec.homepage      = "https://github.com/BrentBauman86/yummy_brews-cli-app"
   spec.license       = "MIT"
 

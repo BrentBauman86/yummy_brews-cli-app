@@ -1,20 +1,20 @@
-YummyBrews-cli-app
+## YummyBrews-cli-app
 
 Welcome to the YummyBrews-cli-app!  This app will allow you to explore a variety of delicious brews that you can check out and read up on.  Dive in and check it out!
 
-Installation
+## Installation
 
 In order to add this gem, simply type the following:
 
 type in the command line: gem 'yummy_brews'
 
-and then execute:  bundle
+and then execute: bundle
 
-or install it yourself as:  gem install yummy_brews
+or install it yourself as: gem install yummy-brews
 
 ## Usage
 
-TODO: Write usage instructions here
+Run by typing: ./bin/yummy-brews
 
 ## Development
 
