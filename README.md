@@ -1,6 +1,6 @@
 ## YummyBrews-cli-app
 
-Welcome to the YummyBrews-cli-app!  This app will allow you to explore a variety of delicious brews that you can check out and read up on.  Dive in and check it out!
+Welcome to the YummyBrews-cli-app!  This app will allow you to explore a variety of delicious brews that you can check out and read up on.  This app also allows you to click on the brews link and dive into further details regarding that brew.
 
 ## Installation
 
