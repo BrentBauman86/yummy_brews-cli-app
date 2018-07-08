@@ -6,11 +6,11 @@ Welcome to the YummyBrews-cli-app!  This app will allow you to explore a variety
 
 In order to add this gem, simply type the following:
 
-type in the command line: gem 'yummy_brews-cli-app'
+Type in the command line: git clone git@github.com:BrentBauman86/yummy_brews-cli-app.git
 
-and then execute: bundle
+Next enter: cd yummy_brews-cli-app
 
-or install it yourself as: gem install yummy-brews
+Then enter: bundle install  
 
 ## Usage
 
