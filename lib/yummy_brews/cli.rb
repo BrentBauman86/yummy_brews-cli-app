@@ -22,6 +22,7 @@ class CLI
     puts user_selection.abv
     puts "Rating: #{user_selection.rating}/5"
     puts "\n\t#{user_selection.description}"
+    puts ""
     puts user_selection.brew_url
   end
 
@@ -36,6 +37,7 @@ class CLI
       start
 
     elsif input == "exit"
+      puts ""
       puts "Goodbye, hope that made you thirsty!"
 
     else
