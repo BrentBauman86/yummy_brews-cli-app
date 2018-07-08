@@ -1,10 +1,8 @@
-# YummyBrews
+YummyBrews-cli-app
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/yummy_brews`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to the YummyBrews-cli-app!  This app will allow you to explore a variety of delicious brews that you can check out and read up on.  Dive in and check it out!
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
+Installation
 
 Add this line to your application's Gemfile:
 
