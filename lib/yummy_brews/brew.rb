@@ -1,4 +1,4 @@
-class Brew
+class YummyBrews::Brew
 
   attr_accessor :name, :brewery, :abv, :brew_type, :rating, :brew_url, :description
 
@@ -15,7 +15,7 @@ class Brew
   end
 
   def self.create_from_array(array)
-    array.each {|brew_hash| Brew.new(brew_hash)}
+    array.each {|brew_hash| YummyBrews::Brew.new(brew_hash)}
   end
 
   def brew_details(details_hash)

@@ -1,8 +1,8 @@
-class BrewScraper
+class YummyBrews::BrewScraper
 
   def self.initiate_scraper
-    Brew.create_from_array(brew_scraper)
-    Brew.all.each do |brew|
+    YummyBrews::Brew.create_from_array(brew_scraper)
+    YummyBrews::Brew.all.each do |brew|
       brew.brew_details(brew_scraper_details(brew.brew_url))
     end
   end
