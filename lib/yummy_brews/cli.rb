@@ -27,12 +27,14 @@ class CLI
   end
 
   def start
+    # binding.pry
     input = nil
     puts ""
     puts "Enter the brew number which fits your fancy, if nothing appeals to you please type exit."
     input = gets.strip
 
-    if input.to_i > 0 && input.to_i < Brew.all.length
+    if input.to_i > 0 && input.to_i <= Brew.all.length
+      # binding.pry
       display_brew(input.to_i)
       start
 
