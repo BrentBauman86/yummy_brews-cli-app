@@ -14,8 +14,8 @@ class YummyBrews::Brew
     @@all << self
   end
 
-  def self.create_from_array(array)
-    array.each {|brew_hash| YummyBrews::Brew.new(brew_hash)}
+  def self.create_from_array(brew_hash_array)
+    brew_hash_array.each {|brew_hash| YummyBrews::Brew.new(brew_hash)}
   end
 
   def brew_details(details_hash)

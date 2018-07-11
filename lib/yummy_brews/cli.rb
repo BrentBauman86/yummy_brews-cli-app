@@ -2,6 +2,7 @@ class YummyBrews::CLI
 
   def call
     YummyBrews::BrewScraper.initiate_scraper
+    # binding.pry
     puts "Hello fellow brew lover, what kind of brew would you like to check out?  Here are your options:"
     list_brews
     start
@@ -15,6 +16,7 @@ class YummyBrews::CLI
 
   def display_brew(integer)
     user_selection = YummyBrews::Brew.all[integer - 1]
+    # binding.pry
     puts ""
     puts user_selection.name
     puts user_selection.brewery
